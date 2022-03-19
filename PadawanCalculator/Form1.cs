@@ -16,5 +16,10 @@ namespace PadawanCalculator
         {
             InitializeComponent();
         }
+
+        private void btnVirgul_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
