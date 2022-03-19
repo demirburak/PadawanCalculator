@@ -64,8 +64,6 @@
             // 
             this.btn_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_C.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btn_C.Image = ((System.Drawing.Image)(resources.GetObject("btn_C.Image")));
-            this.btn_C.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btn_C.Location = new System.Drawing.Point(109, 347);
             this.btn_C.Name = "btn_C";
             this.btn_C.Size = new System.Drawing.Size(87, 62);
@@ -77,8 +75,6 @@
             // 
             this.btnVirgul.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnVirgul.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnVirgul.Image = ((System.Drawing.Image)(resources.GetObject("btnVirgul.Image")));
-            this.btnVirgul.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnVirgul.Location = new System.Drawing.Point(202, 347);
             this.btnVirgul.Name = "btnVirgul";
             this.btnVirgul.Size = new System.Drawing.Size(87, 62);
@@ -91,8 +87,6 @@
             // 
             this.btnEsittir.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEsittir.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnEsittir.Image = ((System.Drawing.Image)(resources.GetObject("btnEsittir.Image")));
-            this.btnEsittir.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnEsittir.Location = new System.Drawing.Point(295, 358);
             this.btnEsittir.Name = "btnEsittir";
             this.btnEsittir.Size = new System.Drawing.Size(88, 51);
@@ -104,8 +98,6 @@
             // 
             this.btnCikart.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCikart.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnCikart.Image = ((System.Drawing.Image)(resources.GetObject("btnCikart.Image")));
-            this.btnCikart.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnCikart.Location = new System.Drawing.Point(295, 295);
             this.btnCikart.Name = "btnCikart";
             this.btnCikart.Size = new System.Drawing.Size(88, 45);
@@ -117,8 +109,6 @@
             // 
             this.btnTopla.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTopla.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnTopla.Image = ((System.Drawing.Image)(resources.GetObject("btnTopla.Image")));
-            this.btnTopla.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnTopla.Location = new System.Drawing.Point(295, 240);
             this.btnTopla.Name = "btnTopla";
             this.btnTopla.Size = new System.Drawing.Size(88, 45);
@@ -130,8 +120,6 @@
             // 
             this.btnCarp.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCarp.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnCarp.Image = ((System.Drawing.Image)(resources.GetObject("btnCarp.Image")));
-            this.btnCarp.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnCarp.Location = new System.Drawing.Point(295, 186);
             this.btnCarp.Name = "btnCarp";
             this.btnCarp.Size = new System.Drawing.Size(88, 45);
@@ -143,8 +131,7 @@
             // 
             this.btnBol.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBol.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnBol.Image = ((System.Drawing.Image)(resources.GetObject("btnBol.Image")));
-            this.btnBol.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnBol.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnBol.Location = new System.Drawing.Point(295, 133);
             this.btnBol.Name = "btnBol";
             this.btnBol.Size = new System.Drawing.Size(88, 45);
@@ -155,9 +142,9 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.Location = new System.Drawing.Point(202, 204);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(87, 62);
@@ -168,9 +155,9 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.Location = new System.Drawing.Point(12, 132);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(87, 62);
@@ -181,9 +168,9 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.Location = new System.Drawing.Point(105, 132);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 62);
@@ -194,7 +181,7 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.button9.Location = new System.Drawing.Point(202, 133);
@@ -208,8 +195,6 @@
             // 
             this.button0.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button0.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button0.Image = ((System.Drawing.Image)(resources.GetObject("button0.Image")));
-            this.button0.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.button0.Location = new System.Drawing.Point(12, 347);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(87, 62);
@@ -220,9 +205,8 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.button5.Location = new System.Drawing.Point(109, 203);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(87, 62);
@@ -233,9 +217,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(12, 204);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 62);
@@ -246,9 +230,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button3.Location = new System.Drawing.Point(202, 271);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 62);
@@ -259,9 +243,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.Location = new System.Drawing.Point(109, 272);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 62);
@@ -272,9 +256,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button1.Location = new System.Drawing.Point(12, 273);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 62);
