@@ -17,15 +17,8 @@ namespace PadawanCalculator
             InitializeComponent();
         }
 
-        private void btnCarp_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void txtEkran_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -97,11 +90,6 @@ namespace PadawanCalculator
             txtEkran.Text += "4";
         }
 
-        private void btnTopla_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnVirgul_Click(object sender, EventArgs e)
         {
             if (txtEkran.Text == "0")
@@ -109,30 +97,13 @@ namespace PadawanCalculator
             txtEkran.Text += ",";
         }
 
-        private void btnEsittir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCikart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBol_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_C_Click(object sender, EventArgs e)
         {
             txtEkran.Text = "0" ;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
     }
-    }
+}
 
