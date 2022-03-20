@@ -19,7 +19,7 @@ namespace PadawanCalculator
 
         private void btnCarp_Click(object sender, EventArgs e)
         {
-            txtEkran.Text = txtEkran.Text + "×";
+
         }
 
         private void txtEkran_TextChanged(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace PadawanCalculator
 
         private void btnTopla_Click(object sender, EventArgs e)
         {
-            txtEkran.Text = txtEkran.Text + "+";
+
         }
 
         private void btnVirgul_Click(object sender, EventArgs e)
@@ -116,18 +116,22 @@ namespace PadawanCalculator
 
         private void btnCikart_Click(object sender, EventArgs e)
         {
-            txtEkran.Text = txtEkran.Text + "-";
+
         }
 
         private void btnBol_Click(object sender, EventArgs e)
         {
 
-            txtEkran.Text = txtEkran.Text + "÷";
         }
 
         private void btn_C_Click(object sender, EventArgs e)
         {
-            txtEkran.Text = null ;
+            txtEkran.Text = "0" ;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
     }

@@ -142,7 +142,7 @@
             // 
             this.button0.Location = new System.Drawing.Point(216, 112);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(75, 23);
+            this.button0.Size = new System.Drawing.Size(75, 26);
             this.button0.TabIndex = 5;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
@@ -252,6 +252,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
