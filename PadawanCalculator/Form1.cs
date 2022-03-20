@@ -52,7 +52,7 @@ namespace PadawanCalculator
         {
             if (txtEkran.Text == "0")
                 txtEkran.Text = "";
-            txtEkran.Text += "";
+            txtEkran.Text += "3";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -103,7 +103,35 @@ namespace PadawanCalculator
             txtEkran.Text = "0" ;
         }
 
+        private void btn_C_Click_1(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnEsittir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCikart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTopla_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCarp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBol_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
