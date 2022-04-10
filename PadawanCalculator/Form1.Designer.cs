@@ -47,18 +47,23 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEkran
             // 
             this.txtEkran.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtEkran.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEkran.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtEkran.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtEkran.Location = new System.Drawing.Point(12, 33);
             this.txtEkran.Name = "txtEkran";
-            this.txtEkran.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtEkran.ReadOnly = true;
             this.txtEkran.Size = new System.Drawing.Size(371, 62);
-            this.txtEkran.TabIndex = 20;
+            this.txtEkran.TabIndex = 0;
+            this.txtEkran.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEkran.WordWrap = false;
+            this.txtEkran.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btn_C
             // 
@@ -71,6 +76,7 @@
             this.btn_C.Text = "C";
             this.btn_C.UseVisualStyleBackColor = true;
             this.btn_C.Click += new System.EventHandler(this.btn_C_Click_1);
+            this.btn_C.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btnVirgul
             // 
@@ -79,10 +85,11 @@
             this.btnVirgul.Location = new System.Drawing.Point(202, 347);
             this.btnVirgul.Name = "btnVirgul";
             this.btnVirgul.Size = new System.Drawing.Size(87, 62);
-            this.btnVirgul.TabIndex = 15;
+            this.btnVirgul.TabIndex = 11;
             this.btnVirgul.Text = ",";
             this.btnVirgul.UseVisualStyleBackColor = true;
             this.btnVirgul.Click += new System.EventHandler(this.btnVirgul_Click);
+            this.btnVirgul.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btnEsittir
             // 
@@ -91,10 +98,11 @@
             this.btnEsittir.Location = new System.Drawing.Point(295, 358);
             this.btnEsittir.Name = "btnEsittir";
             this.btnEsittir.Size = new System.Drawing.Size(88, 51);
-            this.btnEsittir.TabIndex = 14;
+            this.btnEsittir.TabIndex = 16;
             this.btnEsittir.Text = "=";
             this.btnEsittir.UseVisualStyleBackColor = true;
             this.btnEsittir.Click += new System.EventHandler(this.btnEsittir_Click);
+            this.btnEsittir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btnCikart
             // 
@@ -103,10 +111,11 @@
             this.btnCikart.Location = new System.Drawing.Point(295, 295);
             this.btnCikart.Name = "btnCikart";
             this.btnCikart.Size = new System.Drawing.Size(88, 45);
-            this.btnCikart.TabIndex = 13;
+            this.btnCikart.TabIndex = 15;
             this.btnCikart.Text = "-";
             this.btnCikart.UseVisualStyleBackColor = true;
             this.btnCikart.Click += new System.EventHandler(this.btnCikart_Click);
+            this.btnCikart.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btnTopla
             // 
@@ -115,10 +124,11 @@
             this.btnTopla.Location = new System.Drawing.Point(295, 240);
             this.btnTopla.Name = "btnTopla";
             this.btnTopla.Size = new System.Drawing.Size(88, 45);
-            this.btnTopla.TabIndex = 12;
+            this.btnTopla.TabIndex = 14;
             this.btnTopla.Text = "+";
             this.btnTopla.UseVisualStyleBackColor = true;
             this.btnTopla.Click += new System.EventHandler(this.btnTopla_Click);
+            this.btnTopla.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btnCarp
             // 
@@ -127,10 +137,11 @@
             this.btnCarp.Location = new System.Drawing.Point(295, 186);
             this.btnCarp.Name = "btnCarp";
             this.btnCarp.Size = new System.Drawing.Size(88, 45);
-            this.btnCarp.TabIndex = 11;
+            this.btnCarp.TabIndex = 13;
             this.btnCarp.Text = "*";
             this.btnCarp.UseVisualStyleBackColor = true;
             this.btnCarp.Click += new System.EventHandler(this.btnCarp_Click);
+            this.btnCarp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // btnBol
             // 
@@ -140,10 +151,11 @@
             this.btnBol.Location = new System.Drawing.Point(295, 133);
             this.btnBol.Name = "btnBol";
             this.btnBol.Size = new System.Drawing.Size(88, 45);
-            this.btnBol.TabIndex = 10;
+            this.btnBol.TabIndex = 12;
             this.btnBol.Text = "/";
             this.btnBol.UseVisualStyleBackColor = true;
             this.btnBol.Click += new System.EventHandler(this.btnBol_Click);
+            this.btnBol.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button6
             // 
@@ -154,10 +166,11 @@
             this.button6.Location = new System.Drawing.Point(202, 204);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(87, 62);
-            this.button6.TabIndex = 9;
+            this.button6.TabIndex = 7;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button7
             // 
@@ -172,6 +185,7 @@
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button8
             // 
@@ -182,10 +196,11 @@
             this.button8.Location = new System.Drawing.Point(105, 132);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 62);
-            this.button8.TabIndex = 7;
+            this.button8.TabIndex = 9;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button9
             // 
@@ -196,10 +211,11 @@
             this.button9.Location = new System.Drawing.Point(202, 133);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(87, 62);
-            this.button9.TabIndex = 6;
+            this.button9.TabIndex = 10;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button0
             // 
@@ -208,10 +224,11 @@
             this.button0.Location = new System.Drawing.Point(12, 347);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(87, 62);
-            this.button0.TabIndex = 5;
+            this.button0.TabIndex = 1;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.button0_Click);
+            this.button0.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button5
             // 
@@ -221,10 +238,11 @@
             this.button5.Location = new System.Drawing.Point(109, 203);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(87, 62);
-            this.button5.TabIndex = 4;
+            this.button5.TabIndex = 6;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button4
             // 
@@ -235,10 +253,11 @@
             this.button4.Location = new System.Drawing.Point(12, 204);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 62);
-            this.button4.TabIndex = 3;
+            this.button4.TabIndex = 5;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button3
             // 
@@ -249,10 +268,11 @@
             this.button3.Location = new System.Drawing.Point(202, 271);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 62);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 4;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button2
             // 
@@ -263,10 +283,11 @@
             this.button2.Location = new System.Drawing.Point(109, 272);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 62);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 3;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             // 
             // button1
             // 
@@ -277,16 +298,27 @@
             this.button1.Location = new System.Drawing.Point(12, 273);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 62);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 2;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Location = new System.Drawing.Point(12, 423);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(29, 13);
+            this.lblVersion.TabIndex = 18;
+            this.lblVersion.Text = "V1.0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(415, 445);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btn_C);
             this.Controls.Add(this.txtEkran);
             this.Controls.Add(this.btnVirgul);
@@ -305,8 +337,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Padawan Calculator";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,6 +366,7 @@
         private System.Windows.Forms.Button btnVirgul;
         private System.Windows.Forms.TextBox txtEkran;
         private System.Windows.Forms.Button btn_C;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 

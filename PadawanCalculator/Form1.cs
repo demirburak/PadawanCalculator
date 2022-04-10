@@ -20,14 +20,13 @@ namespace PadawanCalculator
             InitializeComponent();
         }
 
-        
 
         private void button9_Click(object sender, EventArgs e)
         {
             if (txtEkran.Text == "0")
                 txtEkran.Text = "";
             txtEkran.Text += "9";
-            
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -95,16 +94,13 @@ namespace PadawanCalculator
 
         private void btnVirgul_Click(object sender, EventArgs e)
         {
-            if (txtEkran.Text.IndexOf(",")==-1)
+            if (txtEkran.Text.IndexOf(",") == -1)
             {
-                if (txtEkran.Text == "0")
-                    txtEkran.Text = "";
+                //if (txtEkran.Text == "0")
+                //    txtEkran.Text = "";
                 txtEkran.Text += ",";
             }
         }
-
-
-      
 
         private void btn_C_Click_1(object sender, EventArgs e)
         {
@@ -115,43 +111,45 @@ namespace PadawanCalculator
         private void btnEsittir_Click(object sender, EventArgs e)
         {
             decimal sonuc = 0;
-            islem a = new islem();
-            decimal.TryParse(txtEkran.Text, out decimal sayi);
-            a.sayi = sayi;
-            a.sembol = islemler[islemler.Count - 1].sembol;
-            islemler.Add(a);
-            for (int i = 0; i < islemler.Count; i++)
+            if (islemler.Count > 0)
             {
-                if (i>0)
+                islem a = new islem();
+                decimal.TryParse(txtEkran.Text, out decimal sayi);
+                a.sayi = sayi;
+                a.sembol = islemler[islemler.Count - 1].sembol;
+                islemler.Add(a);
+                for (int i = 0; i < islemler.Count; i++)
                 {
-                    islem b0 = islemler[i - 1];
-                    islem b = islemler[i];
-                    if (b0.sembol == "+")
+                    if (i > 0)
                     {
-                        sonuc = sonuc + b.sayi;
+                        islem b0 = islemler[i - 1];
+                        islem b = islemler[i];
+                        if (b0.sembol == "+")
+                        {
+                            sonuc = sonuc + b.sayi;
+                        }
+                        if (b0.sembol == "-")
+                        {
+                            sonuc = sonuc - b.sayi;
+                        }
+                        if (b0.sembol == "*")
+                        {
+                            sonuc = sonuc * b.sayi;
+                        }
+                        if (b0.sembol == "/")
+                        {
+                            sonuc = sonuc / b.sayi;
+                        }
                     }
-                    if (b0.sembol == "-")
+                    else
                     {
-                        sonuc = sonuc - b.sayi;
+                        islem b = islemler[i];
+                        sonuc = b.sayi;
                     }
-                    if (b0.sembol == "*")
-                    {
-                        sonuc = sonuc * b.sayi;
-                    }
-                    if (b0.sembol == "/")
-                    {
-                        sonuc = sonuc / b.sayi;
-                    }
-                }
-                else
-                {
-                    islem b = islemler[i];
-                    sonuc = b.sayi;
-                }
-                
 
+
+                }
             }
-            
             txtEkran.Text = sonuc.ToString();
             islemler.Clear();
         }
@@ -173,7 +171,7 @@ namespace PadawanCalculator
 
         private void btnBol_Click(object sender, EventArgs e)
         {
-           
+
             islemekle("/");
         }
 
@@ -188,6 +186,81 @@ namespace PadawanCalculator
             islemler.Add(a);
             txtEkran.Text = "";
         }
+
+       
+        //**** Benim Eklemelerim - Burak D.
+        private void button_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEsittir_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad0)
+            {
+                button0_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad1)
+            {
+                button1_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad2)
+            {
+                button2_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad3)
+            {
+                button3_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad4)
+            {
+                button4_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad5)
+            {
+                button5_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad6)
+            {
+                button6_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad7)
+            {
+                button7_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad8)
+            {
+                button8_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.NumPad9)
+            {
+                button9_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.Decimal)
+            {
+                btnVirgul_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.C || e.KeyCode == Keys.Escape)
+            {
+                btn_C_Click_1(null, null);
+            }
+            else if (e.KeyCode == Keys.Add)
+            {
+                btnTopla_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.Subtract)
+            {
+                btnCikart_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.Multiply)
+            {
+                btnCarp_Click(null, null);
+            }
+            else if (e.KeyCode == Keys.Divide)
+            {
+                btnBol_Click(null, null);
+            }
+        }
+       
     }
 }
 
